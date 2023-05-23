@@ -3,7 +3,7 @@
 This will add a line like this to your package's pubspec.yaml (and run an implicit flutter pub get):
 ```
 dependencies:
-  font_awesome_flutter:
+  test_lab_checker:
     git:
       url: https://github.com/mypower119/test_lab_checker.git
 ```
