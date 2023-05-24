@@ -29,8 +29,9 @@ class TestLabCheckerPlugin: FlutterPlugin, MethodCallHandler {
       val testLabSetting = Settings.System.getString(flutterPluginBinding.getApplicationContext().getContentResolver(), "firebase.test.lab")
       if ("true" == testLabSetting) {
         result.success("true")
+      } else {
+        result.success("false")
       }
-      result.success("false")
     } else {
       result.notImplemented()
     }
